@@ -14,10 +14,10 @@ describe('Employee', function () {
         //create a employee object to send to API.
         var employee = {
             employee: {
-                firstName: "Khemchand",
-                lastName: "Joshi",
-                address: "74, Sitapura, Jaipur",
-                telephoneNumber: 1412748545,
+                firstName: "John",
+                lastName: "Due",
+                address: "211, Street Avenue",
+                telephoneNumber: 5110121212,
                 mobileNumber: 9898989898,
                 DOB: 19820121,
                 SSN: 2222222222222,
@@ -45,7 +45,7 @@ describe('Employee', function () {
         //create a emergencyContact object.
         var emergencyContact = {
             emergencyContact: {
-                name: "Rahul Joshi",
+                name: "Charli Crew",
                 contactNumber: 4564564561,
                 relationship: "father",
                 employeeCode: employeeCode
