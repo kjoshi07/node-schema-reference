@@ -9,19 +9,19 @@
    we are using JOI module to validate request parameters so validate(validation.employee) will validte based on rules efined in ./app/utilss/validations file.
    Once it is passed all validation, Employee controller would be called with createEmployee method.
     
-    router.route('/api/v1/employees')
-            .post(validate(validation.employee), EmployeeController.employee.createEmployee);
+          router.route('/api/v1/employees')
+                   .post(validate(validation.employee), EmployeeController.employee.createEmployee);
         
 2. Second end point is to get employee based on employee ID.
    end point for it is http://localhost:8000/api/v1/getEmployeeById, same first all validation would be passed then pass to corresponding controller method.
  
-    router.route('/api/v1/getEmployeeById')
-        .post(validate(validation.getEmployeeById), EmployeeController.employee.getEmployeeById);
+          router.route('/api/v1/getEmployeeById')
+                 .post(validate(validation.getEmployeeById), EmployeeController.employee.getEmployeeById);
         
 3. Third end point is to update emergency conatct information.
     
-    router.route('/api/v1/emergencyContacts')
-        .post(validate(validation.emergencyContact), EmployeeController.employee.addEmergencyContacts);
+          router.route('/api/v1/emergencyContacts')
+                .post(validate(validation.emergencyContact), EmployeeController.employee.addEmergencyContacts);
         
         
 #Populate emergencyContact in employee details.
